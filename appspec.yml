@@ -3,15 +3,3 @@ os: linux
 files:
   - source:
     destination:
-hooks:
-  BeforeInstall:
-    - location:
-      timeout:
-      runas:
-    - location:
-      timeout:
-      runas:
-  ApplicationStop:
-    - location:
-      timeout:
-      runas:
