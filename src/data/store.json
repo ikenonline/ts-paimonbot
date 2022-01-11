@@ -1,0 +1,16 @@
+{
+    "stats": {
+        "help": {
+            "help": 1
+        },
+        "about": {
+            "about": 1
+        },
+        "books": {
+            "books": 1
+        },
+        "character": {
+            "character": 1
+        }
+    }
+}

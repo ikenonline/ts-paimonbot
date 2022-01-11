@@ -1,0 +1,17 @@
+{
+    "token": "OTI2NDAyMjM0ODAyMTE4NzI2.Yc7JUA.M5sU8w26xX7ZKAvpSFOIBnRM73o",
+    "prefix": "ht!",
+    "production": false,
+    "activity": "ht!help",
+    "errorLog": ["ADD ID HERE"],
+    "allowedArchive": ["ADD ID HERE"],
+    "admins": ["YOUR USER ID HERE"],
+    "web": "RANDOM STRING SHARED WITH WEBSITE HERE",
+    "webPort": 0,
+    "twitter": {
+        "consumer_key":        "CONSUMER KEY",
+        "consumer_secret":     "CONSUMER SECRET",
+        "access_token":        "ACCESS TOKEN",
+        "access_token_secret": "ACCESS TOKEN SECRET"
+    }
+}
