@@ -53,19 +53,19 @@ export default class FollowManager {
     private getFollowsInChannelStatement: SQLite.Statement
     getFollows(channel: Channel, category?: FollowCategory): Follower[] {
         if (category == undefined) {
-            return this.getFollowsInChannelStatement.all({ channelID: channel.id })
+            return this.getFollowsInChannelStatement.all({ channelID: channel.id }) as Follower[]
         }
         return this.getFollowsStatement.all({
             channelID: channel.id,
             category
-        })
+        }) as Follower[]
     }
 
     private getFollowersStatement: SQLite.Statement
     getFollowers(category: string): { channelID: Snowflake }[] {
         return this.getFollowersStatement.all({
             category
-        })
+        }) as { channelID: Snowflake }[]
     }
 
     private followsStatement: SQLite.Statement
@@ -106,7 +106,7 @@ export default class FollowManager {
     following(guild: Guild): { category: FollowCategory, channelID: Snowflake }[] {
         return this.followingStatement.all({
             guildID: guild.id
-        })
+        }) as { category: FollowCategory, channelID: Snowflake }[]
     }
 
     async send(category: FollowCategory, content?: string, embed?: MessageEmbed): Promise<(Message | Message[])[]> {

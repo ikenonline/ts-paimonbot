@@ -515,7 +515,7 @@ export async function sendMessage(source: CommandSource, response: string | Mess
         if (source instanceof Message)
             return await source.channel.send({ content, embeds, components })
         else
-            return await source.reply({ content, embeds, components, fetchReply: true, ephemeral })
+            return await source.reply({ content, embeds, components, fetchReply: true, ephemeral }) as SendMessage
     } catch (error) {
         Logger.error("sendMessage", error)
     }
